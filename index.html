@@ -6,6 +6,35 @@
     <title>Cadastro Livros</title>
 </head>
 <body>
+
+    <div class="principal">
+
+        <h1>Sistema de Editora 01.00.00</h1>
+        <hr>
+
+        <div class="cadastroLivros">
+            <h2>Cadastrar Livros na base de dados</h2>
+
+            <form action="https://api-aula.up.railway.app/livros" method="POST">
+
+                <input type="text" id="title" name="title" placeholder="Título do Livros">
+                <input type="text" id="description" name="description" placeholder="Descrição do Livros">
+                <button type="submit" name="buttonPost">Mandar dados para a API</button>
+
+            </form>
+
+        </div>
+
+        <hr>
+        <div class="consultaLivros">
+            <h2>Mostrar Livros já cadastrados</h2>
+
+            <form action="https://api-aula.up.railway.app/livros" method="get">
+                <button type="submit" name="buttonGet">Pedir Livros para a API</button>
+            </form>
+        </div>
+
+    </div>
     
 </body>
 </html>
